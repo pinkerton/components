@@ -1,4 +1,4 @@
-![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-header-4.png)
+![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-header-5.png)
 
 **Serverless Components** package infrastructure, logic and automation into simple building blocks to help you build serverless applications faster than ever.
 
