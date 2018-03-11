@@ -4,9 +4,9 @@
 
 They can provision infrastructure across all clouds & SaaS vendors.  They can include application logic as well as automation to manage their lifecycle.  They are purely plug-and-play and can be nested to build higher order abstractions.
 
-![serverless components nested](https://s3.amazonaws.com/assets.github.serverless/serverless-components-nested-2.png)
-
 Components are a convenient packaging system for the cloud era, enabling you to focus less on platforms, infrastructure and APIs, and more on delivering results, with the lowest total cost and overhead.
+
+![serverless components nested](https://s3.amazonaws.com/assets.github.serverless/serverless-components-nested-2.png)
 
 ## Quick Start
 
