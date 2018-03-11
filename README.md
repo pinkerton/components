@@ -4,7 +4,7 @@
 
 Components are capable of provisioning infrastructure across any provider or SaaS vendor.  Components can also include application logic and automation to manage their lifecycle.  
 
-They are a universal packaging system that enable you to focus less on platforms, infrastructure and apis, and more on delivering results.
+They are a universal packaging system for back-ends, that enable you to focus less on platforms, infrastructure and apis, and more on delivering results.
 
 ## Quick Start
 
