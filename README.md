@@ -2,7 +2,7 @@
 
 **Serverless Components** package infrastructure and logic into simple building blocks to help you build serverless applications faster than ever.
 
-They are capable of provisioning infrastructure across all providers & SaaS vendors.  They can also include application logic as well as automation to manage their lifecycle.  Components are purely plug-and-play.  All you have to do is `$ components deploy`...
+They are capable of provisioning infrastructure across all providers & SaaS vendors.  They can also include application logic as well as automation to manage their lifecycle.  Components are purely plug-and-play.  All you have to do is deploy them.
 
 Components aim to be an open packaging system for the cloud era, enabling you to focus less on platforms, infrastructure and APIs, and more on delivering results, with the lowest total cost and overhead.
 
