@@ -1,6 +1,6 @@
 ![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme3.png)
 
-**Serverless Components** package serverless infrastructure and logic into composable building blocks to help you build serverless applications faster than ever.
+***Serverless Components*** package serverless infrastructure and logic into composable building blocks to help you build serverless applications faster than ever.
 
 Components are capable of provisioning infrastructure while including both application logic AND lifecycle management. They have a focus on serverless/cloud resources and they also greatly enable reuse, sharing and simplicity.
 
