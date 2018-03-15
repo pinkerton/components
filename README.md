@@ -1,6 +1,6 @@
 ![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-header-8.png)
 
-**Serverless Components** package *infrastructure*, *logic* & *automation* into simple building blocks you can use to build applications more easily than ever.
+**Serverless Components** package *cloud services*, *logic* & *automation* into simple building blocks you can use to build applications more easily than ever.
 
 They are 100% open-source and vendor-agnostic.  They can provision infrastructure across all clouds & SaaS services.  They can also include application logic, as well as automation to manage their lifecycle.
 
