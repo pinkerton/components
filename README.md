@@ -6,8 +6,6 @@ They are 100% open-source and vendor-agnostic.  They can provision infrastructur
 
 They are purely plug-and-play.  You can compose them together to build higher order abstractions, enabling you to focus less on platforms, infrastructure and APIs, and more on delivering results, with the lowest total cost and overhead.
 
-Serverless Components are a convenient packaging system for the cloud era.
-
 ![serverless components nested](https://s3.amazonaws.com/assets.github.serverless/serverless-components-nested-2.png)
 
 ## Quick Start
