@@ -16,25 +16,6 @@ Serverless Components are 100% open-source & vendor-agnostic.  You choose the se
 
 ## Quick Start
 
-## Features
-
-#### Speed
-
-#### Multi-Cloud
-
-Components are capable of provisioning infrastructure across all providers, clouds and vendors.  Use the best option for your use-case, instead of getting locked into a single platform.
-
-#### Outcomes, Not Infrastructure
-
-
-
-#### Abstraction
-
-By nesting Components, you can create powerful abstractions above infrastructure, like application features, which you can plug into any application.  You can also put an entire application into a Component.
-
-#### Open-Source
-
-All Components and the core logic is entirely open-source.
 
 ## Table of contents
 
