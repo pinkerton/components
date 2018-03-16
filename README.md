@@ -1,14 +1,16 @@
 ![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-header-8.png)
 
-#### Easy 
+## Overview
+
+### Easy 
 
 Serverless Components package *cloud services*, *logic* & *automation* into simple building blocks you can use to build applications more easily than ever.
 
-#### Composable 
+### Composable 
 
 Serverless Components can be combined and nested. Reuse their functionality to build applications faster.  Combine them to make higher-order abstractions, like features and applications.
 
-#### Open
+### Open
 
 Serverless Components are 100% open-source & vendor-agnostic.  You choose the services that best solve your problem, instead of being limited and locked into one platform.
 
