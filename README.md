@@ -8,7 +8,7 @@ Serverless Components package *cloud services*, *logic* & *automation* into simp
 
 ### Composable 
 
-Serverless Components can be combined and nested. Reuse their functionality to build applications faster.  Combine them to make higher-order abstractions, like features and applications.
+Serverless Components can be reused, combined & nested. Reuse their functionality to build applications faster.  Combine and nest them to make higher-order abstractions, like features or entire applications.
 
 ### Open
 
