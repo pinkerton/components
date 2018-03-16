@@ -4,7 +4,7 @@
 
 ### Easy 
 
-Serverless Components package *cloud services*, *logic* & *automation* into simple building blocks you can use to build applications more easily than ever.
+A Serverless Component can package *cloud services*, *logic* & *automation* into a simple building block you can use to build applications more easily than ever.
 
 ### Composable 
 
