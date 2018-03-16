@@ -4,7 +4,7 @@
 
 **Composable -** Serverless Components can be combined and nested. Reuse their functionality to build applications faster.  Combine them to make higher-order abstractions, like features and applications.
 
-**Open -** Serverless Components are 100% open-source & vendor-agnostic.  You choose the services that best solve your problem, instead of being limited by and locked into one platform.
+**Open -** Serverless Components are 100% open-source & vendor-agnostic.  You choose the services that best solve your problem, instead of being limited and locked into one platform.
 
 ## Quick Start
 
