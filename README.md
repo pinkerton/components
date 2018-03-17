@@ -18,10 +18,16 @@ Serverless Components are 100% open-source & vendor-agnostic.  You choose the se
 
 ## Quick Start
 
+**Note:** Make sure you have Node.js 8+ and npm installed on your machine
+
+1. Setup
+1. `npm install --global serverless-components`
+1. Setup the environment variables
+   * `export AWS_ACCESS_KEY_ID=my_access_key_id`
+   * `export AWS_SECRET_ACCESS_KEY=my_secret_access_key`
 
 ## Table of contents
 
-* [Getting started](#getting-started)
 * [Concepts](#concepts)
   * [Components](#components)
   * [Inputs & Outputs](#inputs-outputs)
@@ -35,7 +41,8 @@ Serverless Components are 100% open-source & vendor-agnostic.  You choose the se
   * [`serverless.yml`](#serverless.yml)
   * [`index.js`](#index.js)
   * [Testing](#testing)
-* [Docs](#docs)
+* [F.A.Q.](#f.a.q.)
+* [Components](#components)
   * [apigateway](#apigateway)
   * [dynamodb](#dynamodb)
   * [eventgateway](#eventgateway)
@@ -48,24 +55,6 @@ Serverless Components are 100% open-source & vendor-agnostic.  You choose the se
   * [s3-downloader](#s3-downloader)
   * [s3-prototype](#s3-prototype)
   * [s3-uploader](#s3-uploader)
-
-## Getting started
-
-**Note:** Make sure you have Node.js 8+ and npm installed on your machine
-
-1. Setup
-1. `npm install --global serverless-components`
-1. Setup the environment variables
-   * `export AWS_ACCESS_KEY_ID=my_access_key_id`
-   * `export AWS_SECRET_ACCESS_KEY=my_secret_access_key`
-
-## Running Locally
-
-Run commands with
-
-```
-components [Command]
-```
 
 ## Concepts
 
@@ -452,36 +441,7 @@ Congratulations! You've successfully created your first Serverless component!
 
 Want to learn more? Make sure to take a look at all the different component implementations in the ["Serverless Registry"](./registry)!
 
-## Docs
-
-### CLI Usage
-
-#### Deployment
-
-To deploy your app, run
-
-```
-proto deploy
-```
-
-#### Updating
-
-* Change some components inputs
-* Then run
-
-```
-proto deploy
-```
-
-#### Removal
-
-To remove your app, run
-
-```
-proto remove
-```
-
-### Component Usage
+## Components
 
 #### `apigateway`
 
@@ -952,3 +912,4 @@ components:
       eventGatewayApiKey: s0m33v3ntg4t3w4y4p1k3y
       lambdaArn: ${uploaderLambda:arn}
 ```
+## F.A.Q.
