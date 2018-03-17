@@ -16,7 +16,7 @@ Serverless Components are 100% open-source & vendor-agnostic.  You choose the se
 
 ### Serverless
 
-While you can use Serverless Components to encapsulate and deploything anything, we are biased toward SaaS and cloud infrastructure with "serverless" qualities (auto-scaling, pay-per-use, zero-administration), meaning Serverless Components not only give you a great developer experience, but also help you deliver results with the lowest total cost and overhead.
+While you can use Serverless Components to deploy anything, we are biased toward SaaS and cloud infrastructure with "serverless" qualities (auto-scaling, pay-per-use, zero-administration), meaning Serverless Components not only give you a great developer experience, they help you deliver results with the lowest total cost and overhead as well.
 
 ![serverless components overview](https://s3.amazonaws.com/assets.github.serverless/serverless-components-overview-2.gif)
 
