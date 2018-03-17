@@ -14,6 +14,10 @@ Serverless Components can be reused, combined & nested. Reuse their functionalit
 
 Serverless Components are 100% open-source & vendor-agnostic.  You choose the services that best solve your problem, instead of being limited and locked into one platform.
 
+### Serverless
+
+While you can use Serverless Components to encapsulate and deploything anything, we are biased toward SaaS and cloud infrastructure with "serverless" qualities (auto-scaling, pay-per-use, zero-administration), meaning Serverless Components not only give you a great developer experience, but also help you deliver results with the lowest total cost and overhead.
+
 ![serverless components overview](https://s3.amazonaws.com/assets.github.serverless/serverless-components-overview-2.gif)
 
 ## Quick Start
