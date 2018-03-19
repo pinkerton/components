@@ -80,7 +80,12 @@ components:
       name: users-table
 ```
 
-In the above example, all components defined in `components` will be provisioned automatically by the Serverless Components CLI tool.  This is the easiest way to create a Serverless Component.
+In the above example, all components defined in `components` will be provisioned automatically by the Serverless Components CLI tool.  This declarative way is the easiest way to create a Serverless Component.
+
+Serverless Components can written declaratively, in code, or both.  If you want your Component to do more advanced provisioning, write some code...
+
+
+
 
 Components always contain provisioning logic, but they can also contain custom logic to help you manage their lifecycle more easily.  If you want your Component to do more, you can include a `index.js` file and start writing some custom logic.
 
