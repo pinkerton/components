@@ -33,12 +33,12 @@ While you can use Serverless Components to deploy anything, they are biased towa
 ## Table of contents
 
 * [Concepts](#concepts)
-  * [Components](#components)
-  * [Inputs & Outputs](#inputs-outputs)
+  * [Serverless Components](#serverless-components)
+  * [Inputs, Outputs & Input Types](#inputs-outputs)
   * [State](#state)
   * [Variables](#variables)
   * [Graph](#graph)
-  * [Custom commands](#custom-commands)
+  * [Custom Commands](#custom-commands)
   * [Registry](#registry)
 * [Creating components](#creating-components)
   * [Basic setup](#basic-setup)
@@ -62,92 +62,29 @@ While you can use Serverless Components to deploy anything, they are biased towa
 
 ## Concepts
 
-[### Serverless Components](#serverless-components)
+### Serverless Components
 
-A Serverless Component can package cloud/SaaS services, logic & automation into a simple building block you can use to build applications more easily than ever.
+Serverless Components package cloud/SaaS services, logic & automation into simple building blocks you can use to build applications more easily than ever.
 
+Components are merely logic that focus on delivering specific outcomes, whether that's provisioning a low-level piece of infrastructure, a whole feature or an entire application.  Components always contain provisioning logic, but they can also contain other custom logic to help you manage their lifecycle.
 
-A component is the smallest unit of abstraction for your infrastructure. It could be a single small piece like an IAM role, or a larger piece that includes other small pieces, like [`github-webhook-receiver`](#github-webhook-receiver), which includes `lambda` (which itself includes `iam`), `apigateway` (which also includes `iam`), `dynamodb`, and `github-webhook`. So components could be composed with each other in a component dependency graph to build larger components.
-
-You define a component using two files: `serverless.yml` for config, and `index.js` for the provisioning logic.
-
-The `index.js` file exports multiple functions that take two arguments: `inputs` and `context`. Each exported function name reflects the CLI command which will invoke it (the `deploy` function will be executed when one runs `proto deploy`).
-
-These two files look something like this:
+Serverless Components are declared by a `serverless.yml` file, which can contain more child Components in a `components` property, like this:
 
 **serverless.yml**
 
 ```yml
 type: my-component
 
-inputTypes: # inputs that my-component expects to receive
-  foo: string
-  bar: number
-```
-
-**index.js**
-
-```js
-const deploy = (inputs, context) => {
-  // provisioning logic goes here
-}
-
-module.exports = {
-  deploy // this is the command name which is exposed via the CLI
-}
-```
-
-However, this `index.js` file is optional, since your component could just be a composition of other smaller components without provisioning logic on its own. [`github-webhook-receiver`](#github-webhook-receiver) is a good example of this.
-
-This component has only a `serverless.yml` and no provisioning logic in the `index.js` file.
-
-**serverless.yml**
-
-```yml
-type: github-webhook-receiver
-
 components:
-  myTable: # component alias, to be referenced with Variables
+  usersDatabase:
     type: dynamodb
     inputs:
-      name: github-webhook-receiver
-  myFunction:
-    type: lambda
-    inputs:
-      name: github-webhook-receiver
-      memory: 128
-      timeout: 10
-      handler: code.handler
-  myEndpoint:
-    type: apigateway
-    inputs:
-      name: github-webhook-receiver
-      roleArn: arn:aws:iam::XXXXX:role/some-api-gateway-role
-      routes:
-        /github/webhook:
-          post:
-            lambdaArn: ${myFunction.outputs.arn}
-  myGithubWebhook:
-    type: github
-    inputs:
-      token: ${GITHUB_TOKEN} # Variable from env var
-      owner: serverless
-      repo: components-eslam
-      url: ${myEndpoint.outputs.url}
-      event: pull_request
+      name: users-table
 ```
 
-**index.js**
+All components defined in `components` will be provisioned automatically by the Serverless Components CLI tool.  
 
-```js
-const deploy = (inputs, context) => {
-  // provisioning logic goes here
-}
-
-module.exports = {
-  deploy // this is the command name which is exposed via the CLI
-}
-```
+In the above example, the Component simply provisions child Components.  If you want your Component to do more, you can include a `index.js` file and start writing some custom logic.
 
 
 ### Inputs & Outputs
