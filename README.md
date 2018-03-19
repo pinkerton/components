@@ -66,7 +66,7 @@ You can use Serverless Components to deploy anything, however they are biased to
 
 Serverless Components package cloud/SaaS services, logic & automation into simple building blocks you can use to build applications more easily than ever.
 
-Components are merely logic that focus on delivering specific outcomes, whether that's provisioning a low-level piece of infrastructure, a whole feature or an entire application.  Components always contain provisioning logic, but they can also contain other custom logic to help you manage their lifecycle.
+Components are merely code that provisions specific outcomes, whether that's a low-level piece of infrastructure, a whole feature or an entire application.  Components always contain provisioning logic, but they can also contain custom logic to help you manage their lifecycle more easily.
 
 Serverless Components are declared by a `serverless.yml` file, which can contain more child Components in a `components` property, like this:
 
@@ -82,10 +82,9 @@ components:
       name: users-table
 ```
 
-All components defined in `components` will be provisioned automatically by the Serverless Components CLI tool.  
+In the above example, all components defined in `components` will be provisioned automatically by the Serverless Components CLI tool.  This is the easiest way to create a Serverless Component.
 
-In the above example, the Component simply provisions child Components.  If you want your Component to do more, you can include a `index.js` file and start writing some custom logic.
-
+If you want your Component to do more, you can include a `index.js` file and start writing some custom logic.
 
 ### Inputs & Outputs
 
