@@ -62,7 +62,10 @@ While you can use Serverless Components to deploy anything, they are biased towa
 
 ## Concepts
 
-### Components
+[### Serverless Components](#serverless-components)
+
+A Serverless Component can package cloud/SaaS services, logic & automation into a simple building block you can use to build applications more easily than ever.
+
 
 A component is the smallest unit of abstraction for your infrastructure. It could be a single small piece like an IAM role, or a larger piece that includes other small pieces, like [`github-webhook-receiver`](#github-webhook-receiver), which includes `lambda` (which itself includes `iam`), `apigateway` (which also includes `iam`), `dynamodb`, and `github-webhook`. So components could be composed with each other in a component dependency graph to build larger components.
 
