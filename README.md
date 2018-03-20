@@ -1,4 +1,4 @@
-![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-header-8.png)
+![serverless components logo](https://s3.amazonaws.com/assets.github.serverless/serverless-components-readme-2.gif)
 
 ## Overview
 
