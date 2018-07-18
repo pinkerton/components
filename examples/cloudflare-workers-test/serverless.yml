@@ -5,4 +5,4 @@ components:
                 type: cloudflare-workers
                 inputs:
                         zone_id: '66de06a610e659edd89a6de59df291d2'
-                        script_path: '/Users/nirvikghosh/service_workers_playground/Serverless/crap.js'
+                        script_path: '<ScriptPath>'
