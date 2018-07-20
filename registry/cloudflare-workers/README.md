@@ -1,3 +1,4 @@
+
 # README.md
 
 # Cloudflare worker component
@@ -16,10 +17,12 @@
 ## Input Types
 | Name | Type | Description |
 |:------ |:-----|:-----------------|
+
 | **zone_id**| `string`<br/>*required* | zone_id
 | **script_path**| `string`<br/>*required* | script_path
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
 
 
 <!-- AUTO-GENERATED-CONTENT:START (COMPONENT_OUTPUT_TYPES) -->
@@ -35,3 +38,4 @@
 
 ## Example
 ...
+
